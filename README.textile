@@ -1,9 +1,9 @@
-h3. Import SVN repository to your favorite GIT
+h3. Import SVN repository to your favorite GIT.
 You can import and sync with your changes on SVN repository with GIT
 repository at anytime.
 
-h3. How to install?
-<GIT PATH> get the source from here and extract on your directory.
+h3. How to install?.
++GIT PATH+ get the source from here and extract on your directory.
 
 h3. How to import?
 # First you have to install _"git-core"_ and _"svn"_ on your machine
