@@ -1,0 +1,29 @@
+#!/usr/bin/env ruby
+
+require File.join(File.dirname(__FILE__), "lib/svn_on_git.rb")
+
+# Global configuration
+# SVN_PATH = "http://74.50.51.32/svn/saudi_fantasy_football/"
+SVN_PATH = "svn://localhost/test"
+GIT_LOCAL_PATH = "/Users/nhmtanveerhossainkhanhasan/projects/git-test/test4/"
+GIT_PROJECT = "git@github.com:we4tech/testproject.git"
+
+# parse command arguments
+if ARGV.length >= 3
+  git_repo = ARGV[0]
+  git_local = ARGV[1]
+  svn_repo = ARGV[2]
+  svn_revision = ARGV[3] || 0
+  SvnOnGit.new(git_repo, git_local, svn_repo, svn_revision).import
+else
+  puts %{
+    Usage -
+      ./svnongit <git repo> <git local> <svn repo> [<svn revision>]
+          git repo      ie. git@github.com:we4tech/testproject.git
+          git local     warning: this directory will be removed before reinitiating git project
+                        ie. /var/repo/abc
+          svn repo      ie. svn://abc.com/test
+          svn revision  (optional) ie. 200
+                        it means start commiting from revision 200
+}
+end

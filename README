@@ -1,0 +1,27 @@
+== Import SVN repository to your favorite GIT
+You can import and sync with your changes on SVN repository with GIT
+repository at anytime.
+
+== How to install?
+<GIT PATH> get the source from here and extract on your directory
+
+== How to import?
+ 1. First you have to install "git-core" and "svn" on your machine
+ 2. You should have "ssh-agent" and "ssh-add" related tools
+ 3. Kick new terminal
+ 4. $ eval `ssh-agent`
+ 5. $ ssh-add
+ 6. Thus you keep your ssh authentication key and password in ssh agent
+    so whenever GIT fireup new shell to execute commands it won't bother
+    you asking password for your public key.
+ 7. Go to your "svnongit" extracted directory
+ 8. Ensure you have enough permission
+ 9. $ ./svnongit <svn repo> <git repo> <local path>
+ 10. +git repo+ ie. git@github.com:we4tech/testproject.git
+ 11. +local path+ warning: this directory will be removed before reinitiating git project
+     ie. /var/repo/abc
+ 12. +svn repo+ ie. svn://abc.com/test
+
+Best of luck!
+nhm tanveer hossain khan (hasan)
+http://www.tekSymmetry.com
