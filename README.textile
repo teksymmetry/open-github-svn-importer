@@ -25,6 +25,8 @@ h3. How to import?
      ie. /var/repo/abc
 # _svn repo_ ie. svn://abc.com/test
 
-Best of luck!
-nhm tanveer hossain khan (hasan)
-http://www.tekSymmetry.com
+Best of luck!.
+
++nhm tanveer hossain khan (hasan)+.
+
++http://www.tekSymmetry.com+
